@@ -1,0 +1,21 @@
+.modal-content {
+    border: none;
+    border-radius: 10px;
+    
+    .modal-header {
+        border-bottom: 1px solid #404040;
+    }
+    
+    .modal-footer {
+        border-top: 1px solid #404040;
+    }
+    
+    .btn {
+        padding: 0.5rem 1.5rem;
+        transition: all 0.3s ease;
+        
+        &:hover {
+            transform: translateY(-2px);
+        }
+    }
+}
