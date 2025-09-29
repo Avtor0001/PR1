@@ -11,69 +11,53 @@
     <!-- Header -->
     <header class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="#home">
                 <img src="images/LOGO.png" alt="Logo" height="40">
             </a>
             
             <div class="d-flex align-items-center">
-                <!-- Burger menu for mobile -->
                 <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 
-                <!-- Cart icon -->
                 <img class="cart-icon" src="images/Corz.png" alt="Cart" height="24">
             </div>
 
-            <!-- Navigation -->
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                        <a class="nav-link dropdown-toggle" href="#home" role="button" data-bs-toggle="dropdown">
                             Home
                         </a>
                         <ul class="dropdown-menu">
-                            <li><span class="dropdown-item">Point 1</span></li>
-                            <li><span class="dropdown-item">Point 2</span></li>
-                            <li><span class="dropdown-item">Point 3</span></li>
-                            <li><span class="dropdown-item">Point 4</span></li>
+                            <li><a class="dropdown-item" href="#home">Main</a></li>
+                            <li><a class="dropdown-item" href="#latest-episodes">Latest Episodes</a></li>
+                            <li><a class="dropdown-item" href="#reviews">Reviews</a></li>
                         </ul>
                     </li>
                     
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                        <a class="nav-link dropdown-toggle" href="#latest-episodes" role="button" data-bs-toggle="dropdown">
                             Episodes
                         </a>
                         <ul class="dropdown-menu">
-                            <li><span class="dropdown-item">Point 1</span></li>
-                            <li><span class="dropdown-item">Point 2</span></li>
-                            <li><span class="dropdown-item">Point 3</span></li>
-                            <li><span class="dropdown-item">Point 4</span></li>
+                            <li><a class="dropdown-item" href="#latest-episodes">Latest Episodes</a></li>
+                            <li><a class="dropdown-item" href="#accordion">Episode Details</a></li>
                         </ul>
                     </li>
                     
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                        <a class="nav-link dropdown-toggle" href="#about" role="button" data-bs-toggle="dropdown">
                             About
                         </a>
                         <ul class="dropdown-menu">
-                            <li><span class="dropdown-item">Point 1</span></li>
-                            <li><span class="dropdown-item">Point 2</span></li>
-                            <li><span class="dropdown-item">Point 3</span></li>
-                            <li><span class="dropdown-item">Point 4</span></li>
+                            <li><a class="dropdown-item" href="#about">About Us</a></li>
+                            <li><a class="dropdown-item" href="#carousel">Gallery</a></li>
                         </ul>
                     </li>
                     
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                            Contact
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><span class="dropdown-item">Point 1</span></li>
-                            <li><span class="dropdown-item">Point 2</span></li>
-                            <li><span class="dropdown-item">Point 3</span></li>
-                            <li><span class="dropdown-item">Point 4</span></li>
-                        </ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -81,7 +65,7 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero-section bg-dark text-white py-5">
+    <section id="home" class="hero-section bg-dark text-white py-5">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
@@ -96,7 +80,7 @@
     </section>
 
     <!-- Latest Episodes -->
-    <section class="latest-episodes py-5 bg-dark text-white">
+    <section id="latest-episodes" class="latest-episodes py-5 bg-dark text-white">
         <div class="container">
             <div class="d-flex justify-content-between align-items-center mb-5">
                 <h2 class="h1 fw-bold">Latest episodes</h2>
@@ -168,7 +152,7 @@
     </section>
 
     <!-- Carousel -->
-    <section class="carousel-section py-5 bg-dark">
+    <section id="carousel" class="carousel-section py-5 bg-dark">
         <div class="container">
             <div id="podcastCarousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
@@ -200,10 +184,9 @@
     </section>
 
     <!-- Accordion -->
-    <section class="accordion-section py-5 bg-dark text-white">
+    <section id="accordion" class="accordion-section py-5 bg-dark text-white">
         <div class="container">
             <div class="accordion" id="episodesAccordion">
-                <!-- Episode 1 -->
                 <div class="accordion-item bg-secondary text-white">
                     <h2 class="accordion-header">
                         <button class="accordion-button bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#episode1">
@@ -212,12 +195,11 @@
                     </h2>
                     <div id="episode1" class="accordion-collapse collapse show" data-bs-parent="#episodesAccordion">
                         <div class="accordion-body">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut ipsum vel risus sollicitudin luctus. Nullam in mi et enim auctor volutpat. Aliquam erat volutpat.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut ipsum vel risus sollicitudin luctus. Nullam in mi et enim auctor volutpat. Aliquam erat volutpat. Nam consequat sem id est malesuada, at sollicitudin magna tempor.
                         </div>
                     </div>
                 </div>
                 
-                <!-- Episode 2 -->
                 <div class="accordion-item bg-secondary text-white">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#episode2">
@@ -226,12 +208,11 @@
                     </h2>
                     <div id="episode2" class="accordion-collapse collapse" data-bs-parent="#episodesAccordion">
                         <div class="accordion-body">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut ipsum vel risus sollicitudin luctus. Nullam in mi et enim auctor volutpat. Aliquam erat volutpat.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut ipsum vel risus sollicitudin luctus. Nullam in mi et enim auctor volutpat. Aliquam erat volutpat. Nam consequat sem id est malesuada, at sollicitudin magna tempor.
                         </div>
                     </div>
                 </div>
                 
-                <!-- Episode 3 -->
                 <div class="accordion-item bg-secondary text-white">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#episode3">
@@ -240,12 +221,11 @@
                     </h2>
                     <div id="episode3" class="accordion-collapse collapse" data-bs-parent="#episodesAccordion">
                         <div class="accordion-body">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut ipsum vel risus sollicitudin luctus. Nullam in mi et enim auctor volutpat. Aliquam erat volutpat.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut ipsum vel risus sollicitudin luctus. Nullam in mi et enim auctor volutpat. Aliquam erat volutpat. Nam consequat sem id est malesuada, at sollicitudin magna tempor.
                         </div>
                     </div>
                 </div>
                 
-                <!-- Episode 4 -->
                 <div class="accordion-item bg-secondary text-white">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#episode4">
@@ -254,7 +234,7 @@
                     </h2>
                     <div id="episode4" class="accordion-collapse collapse" data-bs-parent="#episodesAccordion">
                         <div class="accordion-body">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut ipsum vel risus sollicitudin luctus. Nullam in mi et enim auctor volutpat. Aliquam erat volutpat.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut ipsum vel risus sollicitudin luctus. Nullam in mi et enim auctor volutpat. Aliquam erat volutpat. Nam consequat sem id est malesuada, at sollicitudin magna tempor.
                         </div>
                     </div>
                 </div>
@@ -262,9 +242,25 @@
         </div>
     </section>
 
-    <!-- Reviews Tabs -->
-    <section class="reviews-section py-5 bg-dark text-white">
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-dark text-white">
         <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="h1 fw-bold mb-4">About Our Podcast</h2>
+                    <p class="lead">We're passionate about helping podcasters create amazing content with professional quality.</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="images/IMAGE.png" alt="About Us" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Tabs -->
+    <section id="reviews" class="reviews-section py-5 bg-dark text-white">
+        <div class="container">
+            <h2 class="h1 fw-bold text-center mb-5">Listener Reviews</h2>
             <ul class="nav nav-tabs justify-content-center mb-4" id="reviewsTab" role="tablist">
                 <li class="nav-item" role="presentation">
                     <button class="nav-link active" id="tab-1" data-bs-toggle="tab" data-bs-target="#content-1">1 звезда</button>
@@ -587,32 +583,63 @@
         </div>
     </section>
 
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-dark text-white">
+        <div class="container">
+            <h2 class="h1 fw-bold text-center mb-5">Contact Us</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="card bg-secondary text-white">
+                        <div class="card-body p-4">
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label class="form-label">Name</label>
+                                        <input type="text" class="form-control bg-dark text-white" placeholder="Your Name">
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label class="form-label">Email</label>
+                                        <input type="email" class="form-control bg-dark text-white" placeholder="Your Email">
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Message</label>
+                                    <textarea class="form-control bg-dark text-white" rows="5" placeholder="Your Message"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer class="footer bg-dark text-white py-5">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-3 text-center text-lg-start mb-4 mb-lg-0">
-                    <img src="images/LOGO.png" alt="Logo" height="40">
+                    <a href="#home">
+                        <img src="images/LOGO.png" alt="Logo" height="40">
+                    </a>
                 </div>
                 
                 <div class="col-lg-6 mb-4 mb-lg-0">
                     <div class="row">
                         <div class="col-6">
                             <div class="d-flex flex-column">
-                                <a href="#" class="text-white text-decoration-none mb-2">Home</a>
-                                <a href="#" class="text-white text-decoration-none mb-2">About</a>
-                                <a href="#" class="text-white text-decoration-none mb-2">Episodes</a>
-                                <a href="#" class="text-white text-decoration-none">Contact</a>
+                                <a href="#home" class="text-white text-decoration-none mb-2">Home</a>
+                                <a href="#about" class="text-white text-decoration-none mb-2">About</a>
+                                <a href="#latest-episodes" class="text-white text-decoration-none mb-2">Episodes</a>
+                                <a href="#contact" class="text-white text-decoration-none">Contact</a>
                             </div>
                         </div>
                         <div class="col-6">
                             <div class="d-flex flex-column">
-                                <a href="#" class="text-white-50 text-decoration-none mb-2">Style Guide</a>
-                                <a href="#" class="text-white-50 text-decoration-none mb-2">Instructions</a>
-                                <a href="#" class="text-white-50 text-decoration-none mb-2">Changelog</a>
-                                <a href="#" class="text-white-50 text-decoration-none mb-2">Credit</a>
-                                <a href="#" class="text-white-50 text-decoration-none mb-2">Powered by Webflow</a>
-                                <a href="#" class="text-white-50 text-decoration-none">Licenses</a>
+                                <a href="#carousel" class="text-white-50 text-decoration-none mb-2">Gallery</a>
+                                <a href="#accordion" class="text-white-50 text-decoration-none mb-2">Episode Details</a>
+                                <a href="#reviews" class="text-white-50 text-decoration-none">Reviews</a>
                             </div>
                         </div>
                     </div>
